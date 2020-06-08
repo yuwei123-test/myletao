@@ -79,16 +79,18 @@ $(function() {
     console.log("hehe");
 
     // 访问退出接口, 进行退出
-     $.ajax({
-       url: "/employee/employeeLogout",
-       type: "GET",
-       dataType: "json",
-       success: function( info ) {
+    //  $.ajax({
+    //    url: "/employee/employeeLogout",
+    //    type: "GET",
+    //    dataType: "json",
+    //    success: function( info ) {
 
-         if ( info.success ) {
-           location.href = "login.html"
-         }
-       }
-     })
+    //      if ( info.success ) {
+    //        location.href = "login.html"
+    //      }
+    //    }
+    //  })
+    //因为接口过期，暂时用
+    location.href = "login.html"//来实现一下效果
   })
 })

@@ -5,7 +5,7 @@
   margin-top: 150px;
 }
 a {
-  color: #ccc;
+  color: #337ab7;
 }
 a:link,
 a:visited,
@@ -35,6 +35,7 @@ font-size: 20px;
   left: 0;
   top: 0;
   z-index: 999;
+  transition: all 1s;
 }
 .id_aside .title{
   height: 50px;
@@ -73,15 +74,28 @@ font-size: 20px;
 .id_aside .nav .child a {
   padding-left: 60px;
 }
+.id_aside.now {
+  left: -180px;
+}
+.id_main {
+  height: 1000px;
+  width: 100%;
+  padding-left: 180px;
+  padding-top: 50px;
+  transition: all 1s;
+}
 .id_main .topBar {
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
  height: 50px;
  line-height: 50px;
 width: 100%;
   padding-left: 180px;
+  
   background-color: #3C8DBC;
+  z-index: 666;
+  transition: all 1s;
 }
 .id_main .topBar a {
   color: #fff;
@@ -94,3 +108,18 @@ width: 100%;
 .id_main .topBar .icon-logout {
   padding-right: 10px;
 }
+.id_main .topBar.now {
+  padding-left: 0;
+}
+.id_main.now{
+  padding-left: 0;
+}
+.breadcrumb {
+  margin-top: 10px;
+}
+.id_main #main .echarts1,
+.id_main #main .echarts2 {
+  height: 400px;
+  width: 506px;
+}
+

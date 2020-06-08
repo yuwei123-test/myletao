@@ -15,3 +15,5 @@ $(document).ajaxEnd(function(){
     Nprogress.done();
   }, 500);
 })
+
+
