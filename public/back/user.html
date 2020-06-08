@@ -63,10 +63,46 @@
         
       </ol>
 
-      <!-- echarts 数据可视化 -->
-      <!-- 第一步 准备一个有宽高的盒子 -->
+     <div class="us_content">
+      <table class="table table-bordered table-hover">
+       			
+        <thead>
+         <tr>
+           <th> 序号</th>
+           <th> 用户名</th>
+           <th> 手机号</th>
+           <th> 状态</th>
+           <th> 操作</th>
+         </tr>
+        </thead>
+        <tbody>
+           <!-- 挖个坑 -->
+        </tbody>
+       </table>
+     </div>
 
- 
+  <!-- 分页组件 -->
+ <div class="page pull-right">
+  <nav aria-label="Page navigation">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+ </div>
  
  <!-- 模态框 -->
 
@@ -88,12 +124,25 @@
   </div>
 </div>
 
+ <!-- 创建模板 -->
+ <script type="text/html" id="tpl">
+  {{each rows v i}}
+  <tr>
+    <td>1</td>
+    <td>cat</td>
+    <td>15023244234</td>
+    <td>正常</td>
+    <td><button class="btn btn-danger"> 禁用</button></td>
+  </tr>
+{{/each}}
+ </script>
+
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/nprogress/nprogress.js"></script>
   <!-- 表单校验 -->
   <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
-  
+  <script src="lib/artTemplate/template-web.js"></script>
   <script src="js/user.js"></script>
 </body>
 </html>
