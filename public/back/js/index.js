@@ -1,15 +1,5 @@
 $(function(){
-  //实现分类管理的二级分类的切换功能
-  $('.category').on('click',function(){
-    $(this).next().stop().slideToggle();
-  })
-  //配置首页头部导航条功能
-$('.icon-menu').on('click',function(){
- 
-  $('.id_aside').toggleClass('now');
-  $('.id_main .topBar').toggleClass('now');
-  $('.id_main').toggleClass('now');
-})
+
 
 
 // 基于准备好的dom，初始化echarts实例
