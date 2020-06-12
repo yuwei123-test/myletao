@@ -27,6 +27,14 @@ $('.icon-menu').on('click',function(){
   $('.id_main .topBar').toggleClass('now');
   $('.id_main').toggleClass('now');
 })
+ //模态框
+//让模态框显示
+$('.icon-logout').on('click',function(){
+ 
+  $('#logoutModal').modal('show');
+})
+
+
 })
 
 

@@ -93,4 +93,28 @@ $(function() {
     //因为接口过期，暂时用
     location.href = "login.html"//来实现一下效果
   })
+  //模态框
+//让模态框显示
+$('.icon-logout').on('click',function(){
+ 
+  $('#logoutModal').modal('show');
+})
+
+//给退出按钮注册点击事件  点击时，让模态框消失并且回到登录页
+$('.icon-logout').on('click', function(){
+  $('#logoutModal').modal('hide');
+//访问退出接口，进行退出
+$.ajax({
+    type:'get',
+    url:'/employee/employeeLogout',
+    dataType:'json',
+    success:function(info){
+        console.log(info);
+        if(info.success){
+            location.href = 'login.html'
+        }
+        
+    }
+})
+})
 })
